@@ -1,0 +1,83 @@
+CREATE TABLE ProductionOrder (
+    ID COUNTER CONSTRAINT PK_ProductionOrder PRIMARY KEY,  
+    OrderNo TEXT(20) NOT NULL,
+    ProductName TEXT(50) NOT NULL,
+    ProcessCode TEXT(50) NOT NULL,
+    Quantity INT  ,  
+    DeliveryDate DATETIME,
+    CustomerName TEXT(50),
+    CustomerPhone TEXT(20),
+    OrderStatus TEXT(50),
+    SchedulingCycle TEXT(20),
+    Remarks MEMO,  
+    ModifyTime DATETIME,
+    CreateTime DATETIME
+);
+
+CREATE TABLE Equipment (
+    ID COUNTER CONSTRAINT PK_Equipment PRIMARY KEY,
+    EquipmentName TEXT(50) NOT NULL,
+    EquipmentCode TEXT(20) NOT NULL,
+    ProductionCapacity LONG NOT NULL,
+    OriginalValue LONG NOT NULL,
+    Supplier TEXT(50),
+    PurchaseDate DATETIME,
+    Remarks MEMO,
+    EquipmentAlias TEXT(50),
+    ProductionWorkshop TEXT(50)
+);
+
+CREATE TABLE OperationPlan (
+    ID COUNTER CONSTRAINT PK_OperationPlan PRIMARY KEY,
+    OrderNo TEXT(20) NOT NULL,
+    ProcessCode TEXT(50) NOT NULL,
+    ProcessSeq INT NOT NULL,
+    EquipmentName TEXT(50) NOT NULL,
+    ProcessName TEXT(50) NOT NULL,
+    ProcessTime INT NOT NULL,
+    StartTime DATETIME,
+    EndTime DATETIME,
+    WorkTeam TEXT(20),
+    OperationSeq INT ,
+    EquipmentIDSet MEMO,
+    ProcessTimeSet MEMO,
+    EquipmentNameSet MEMO
+);
+
+CREATE TABLE Process (
+    ID COUNTER CONSTRAINT PK_Process PRIMARY KEY,
+    ProcessCode TEXT(20) NOT NULL,
+    ProcessName TEXT(50) NOT NULL,
+    Remarks MEMO
+);
+
+CREATE TABLE ProcessDetailEquipment (
+    ID COUNTER CONSTRAINT PK_ProcessDetailEquipment PRIMARY KEY,
+    ProcessDetailID INT NOT NULL,
+    EquipmentID INT NOT NULL,
+    EquipmentName TEXT(50) NOT NULL,
+    ProcessTime INT NOT NULL,
+    Remarks MEMO,
+    CreateTime DATETIME
+);
+
+CREATE TABLE ProcessMaster (
+    ID COUNTER CONSTRAINT PK_ProcessMaster PRIMARY KEY,
+    ProcessCode TEXT(20) NOT NULL,
+    ProcessDesc MEMO,
+    Product TEXT(20),
+    Version TEXT(10),
+    WorkshopType TEXT(20),
+    Creator TEXT(20),
+    CreateTime DATETIME,
+    Modifier TEXT(20),
+    ModifyTime DATETIME
+);
+
+CREATE TABLE ProcessRouteDetail (
+    ID COUNTER CONSTRAINT PK_ProcessRouteDetail PRIMARY KEY,
+    ProcessCode TEXT(20) NOT NULL,
+    ProcessName TEXT(50) NOT NULL,
+    ProcessSeq INT NOT NULL
+);
+

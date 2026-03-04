@@ -1,0 +1,187 @@
+# Main Interface Text
+ui.title=My Application
+ui.menu.file=File
+ui.menu.edit=Edit
+ui.menu.view=View
+ui.menu.help=Help
+
+# tab Text
+tab.orderManagement=order management
+tab.craftManagement=craft management
+tab.equipmentManagement=equipment management
+tab.jobPlan=job plan
+tab.jobScheduling=job scheduling
+tab.mainPage=main page
+tab.parameterSetting=parameterSettings
+# Button Text
+button.setCraftNo=set Pno
+button.setSchedulingPeriod=set SC
+button.generateJobplan=generate plan
+button.query=query
+button.add=add
+button.delete=delete
+button.edit=edit
+button.startOptimization=start opt
+button.queryOperationPlan=query op plan
+button.start=Start
+button.stop=Stop
+button.save=Save
+button.load=Load
+button.export=Export
+
+# Label Text
+label.edtOrderID=ONo:
+label.edtProduct=PN:
+label.deliveryDate=DD:
+label.customerName=CN:
+label.processNumber=PNo:
+label.schedulingCycle=SC:
+label.quantity=QTY:
+label.orderList=order list
+label.craftList=craft list
+label.craftDetList=craft detail
+label.equipmentList=equipment list
+label.theme=Swarm Intelli Scheduling
+label.version=VN:
+label.workshop=ST:
+label.processDescription=PTD:
+label.operationName=ON:
+label.operationSequence=OS:
+label.equipmentName=EN:
+label.operationTime=OT:
+label.equipmentSupplier=ES:
+label.equipmentCode=EC:
+label.purchaseTime=PCHT:
+label.memo=memo:
+label.optimizationObjective=OO:
+label.optimalObjectiveValue=OOV:
+label.optimizedSequenceValue=OSV:
+label.optimizationAlgorithm=OA:
+label.welcome=Welcome to Application
+label.status=Status: Ready
+label.progress=Progress:
+label.result=Result:
+label.messageDisplayArea=message
+label.algorithmRunTime=runTime:
+label.popSize=pops:
+label.evaluationCount=evalt:
+label.runTimes=rt:
+#tooltip
+tooltip.edtOrderID=Order Number
+tooltip.edtProduct=product name
+tooltip.deliveryDate=delivery date
+tooltip.customerName=customerName
+tooltip.processNumber=process Number
+tooltip.schedulingCycle=production scheduling cycle
+tooltip.quantity=quantity
+tooltip.setCraftNo=set process Number
+tooltip.setSchedulingPeriod=set scheduling cycle
+tooltip.generateJobplan=generate job plan
+tooltip.queryOrder=query orders 
+tooltip.addOrder=add a new order
+tooltip.deleteOrder=delete the selected order
+tooltip.editOrder=edit the selected order
+tooltip.queryCraft=query crafts 
+tooltip.addCraft=add a new craft
+tooltip.deleteCraft=delete the selected craft
+tooltip.editCraft=edit the selected craft
+tooltip.addCraftDetail=add a new process
+tooltip.deleteCraftDetail=delete the selected process
+tooltip.addEquipment=add a new equipment record
+tooltip.deleteEquipment=delete the selected equipment record
+tooltip.queryEquipment=query equipment records 
+tooltip.editEquipment=edit a equipment record
+tooltip.queryJobplan=query job plans
+tooltip.addJobplan=add a new job plan
+tooltip.deleteJobplan=delete the selected job plan
+tooltip.editJobplan=edit the selected job plan
+tooltip.version=version number
+tooltip.workshop=workshop type
+tooltip.processDescription=processing technology description
+tooltip.operationName=operation name
+tooltip.operationSequence=operation sequence
+tooltip.equipmentName=equipment name
+tooltip.operationTime=operation time
+tooltip.equipmentSupplier=equipment supplier
+tooltip.equipmentCode=equipment code
+tooltip.purchaseTime=purchase time
+tooltip.optimalObjectiveValue=optimal objective value
+tooltip.optimizedSequenceValue=optimized sequence value
+tooltip.optimizationAlgorithm=optimization algorithm
+tooltip.optimizationObjective=optimization objective
+tooltip.startOptimization=start optimization
+tooltip.queryOperationPlan=query operation plans
+tooltip.messageDisplayArea=message display area
+tooltip.popSize=population size
+tooltip.evaluationCount=evaluation times
+tooltip.runTimes=run times
+
+# Menu Items
+menu.file.sys=system
+menu.file.help=help
+menu.file.new=New
+menu.file.open=Open
+menu.file.save=Save
+menu.file.exit=Exit
+menu.edit.copy=Copy
+menu.edit.paste=Paste
+
+# Dialog Text
+dialog.confirm=Confirm
+dialog.cancel=Cancel
+dialog.save=Save
+dialog.load=Load
+
+#image
+image.src=./navigator_en.jpg
+
+# Error Messages
+error.file_not_found=File not found
+error.invalid_format=Invalid format
+error.network_error=Network connection error
+#db
+table.orderName=ProductionOrder
+table.equipmentName=Equipment
+table.processName=Process
+table.jobPlanName=OperationPlan
+table.processDetailEquipment=ProcessDetailEquipment
+table.processMaster=ProcessMaster
+table.processRouteDetail=ProcessRouteDetail
+
+field.order.ID=ID
+field.order.OrderNo=OrderNo
+field.order.ProductName=ProductName
+field.order.ProcessCode=ProcessCode
+field.order.Quantity=Quantity
+field.order.DeliveryDate=DeliveryDate
+field.order.CustomerName=CustomerName
+field.order.CustomerPhone=CustomerPhone
+field.order.OrderStatus=OrderStatus
+field.order.SchedulingCycle=SchedulingCycle
+field.order.Remarks=Remarks
+field.order.ModifyTime=ModifyTime
+field.order.CreateTime=CreateTime
+
+field.Equipment.ID=ID
+field.Equipment.EquipmentName=EquipmentName
+field.Equipment.EquipmentCode=EquipmentCode
+field.Equipment.ProductionCapacity=ProductionCapacity
+field.Equipment.OriginalValue=OriginalValue
+field.Equipment.Supplier=Supplier
+field.Equipment.PurchaseDate=PurchaseDate
+field.Equipment.Remarks=Remarks
+field.Equipment.EquipmentAlias=EquipmentAlias
+field.Equipment.ProductionWorkshop=ProductionWorkshop
+
+field.Process.ID=ID
+field.Process.ProcessCode=ProcessCode
+field.Process.ProcessName=ProcessName
+field.Process.Remarks=Remarks
+
+field.OperationPlan.ID=ID
+
+field.PDE.ID=ID
+
+field.ProcessMaster.ID=ID
+
+field.PRD.ID=ID

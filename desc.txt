@@ -1,0 +1,4 @@
+Create an ODBC data source named SISAPS_EN on Windows to connect to the database SISDatabase.accdb.
+
+Run app_SISAPS.mlapp.
+
